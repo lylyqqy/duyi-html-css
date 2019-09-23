@@ -1,0 +1,6 @@
+<svg style="background:yellowgreen" width="500" height="500"xmlns="http://www.w3.org/2000/svg">
+    <circle cx="250" cy="250" r="200" fill="none" stroke="azure" stroke-width="3"/>
+    <path d="M250 50 A100 100 0 0 1 250 250 A100 100 0 0 0 250 450 A200 200 0 0 1 250 50" fill="yellow" stroke="azure"stroke-width="3" />
+    <circle cx="250" cy="150" r="30" fill="yellowgreen" />
+     <circle cx="250" cy="350" r="30" fill="yellow" />
+</svg>

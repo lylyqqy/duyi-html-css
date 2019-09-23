@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        请选择性别：
+        <!-- 显式关联 -->
+        <input type="radio" name="gender" id="MALE">
+        <label for="MALE">男</label>
+        <input type="radio" name="gender" id="FEMALE">
+        <label for="FEMALE">女</label>
+        <!-- 隐式关联 -->
+        <label >
+        <input type="radio" name="gender" >
+        男
+        </label>
+        <label >
+        <input type="radio" name="gender" >
+        女</label>
+    </p>
+</body>
+</html>

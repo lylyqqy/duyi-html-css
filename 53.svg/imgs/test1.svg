@@ -1,0 +1,16 @@
+<svg style="background:yellowgreen;" width="500" height="1000"xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" x="100" y="100" fill="yellow" stroke="#fff" stroke-width="2"/>
+    <circle cx="200" cy="400" r="50" fill="transparent"stroke="blanchedalmond" stroke-width="5"/>
+    <ellipse rx="30" ry="80" cx="200" cy="300" fill="aquamarine" />
+    <line x1="10" x2="100" y1="10" y2="80" stroke="azure" />
+    
+    <!-- 折线 -->
+    <polyline points="300,100,350,100,350,150,400,150,400,200" fill="blueviolet" stroke="chocolate" />
+    
+
+    <polygon points="300,300,400,400,300,500" fill="none" stroke="#000" stroke-width="3"/>
+    <!-- 路径 -->
+    <path d="M150 600 L300 600 L300 800 L150 800 Z" fill="aquamarine"stroke="#fff"stroke-width="3"/>
+    <!-- 椭圆 A半径1，半径2 顺时针旋转角度 小弧（0）或大弧（1） 顺时针1/逆时针0-->
+    <path d="M0 150 A150 150 0 0 1 150 0" fill="none" stroke="#fff" stroke-width="3" />
+</svg>

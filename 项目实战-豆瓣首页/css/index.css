@@ -1,0 +1,108 @@
+/* 统一样式 */
+button{
+    cursor: pointer;
+}
+/* 页面头部开始 */
+/* 头部信息 */
+.header{
+    background: #ffffff;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.icon{
+ width:160px;
+ height:34px;
+ color: rgb(34,138,49);
+ font-size:28px;
+ font-weight: bold;
+ font-family:  Helvetica,Arial, sans-serif;
+ float: left;
+ margin-left: 205px;
+ margin-top:30px;
+ }
+
+.search{
+    float: left;
+    margin-left:25px;
+    margin-top:30px;
+    height: 30px;
+    width:270px;
+    position: relative;
+}
+
+.search input{
+    height: 30px;
+    width:270px;
+    text-indent: 2px;
+    color: rgb(0,0,0);
+}
+.search input::placeholder{
+    color: rgb(210,210,210);
+}
+.search input:focus{
+   border:2px solid rgb(238,238,238);
+}
+.search img{
+    position: absolute;
+    left: 250px;
+    top:11px;
+    width: 15px;
+    height:15px;
+}
+
+.headerul{
+    float: left;
+}
+.headerul ul{
+    margin-top:40px;
+    margin-left:35px;
+}
+.headerul ul li{
+    float: left;
+    width: 40px;
+    height: 20px;
+    overflow: hidden;
+    background-image: url("../img/雪碧图.png");
+    margin-right:20px;
+}
+.headerul ul li:hover{
+    cursor: pointer;
+}
+.headerul ul li#pic1{
+    background-position: 0,0;
+   
+}
+
+.headerul ul li#pic2{
+    background-position: -60px,0;
+   
+}
+.headerul ul li#pic3{
+    background-position: -120px,0;
+   
+}
+.headerul ul li#pic4{
+    background-position: -180px,0;
+   
+}
+.headerul ul li#pic5{
+    background-position: -240px,0;
+   
+}
+.headerul ul li#pic6{
+    background-position: -300px,0;
+   
+}
+.headerul ul li#pic7{
+    background-image: url(../img/ic_shijian_home_nav.png);
+    background-position:0,0;
+   
+}
+.headerul ul li#pic8{
+    background-position: -423px,0;
+   
+}
+/* 页面头部结束 */

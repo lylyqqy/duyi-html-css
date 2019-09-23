@@ -1,0 +1,54 @@
+<!-- 不太懂 第一个span元素有没有设置样式，为什么点击它样式也改变了 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .radio-item .radio{
+            width:30px;
+        height: 30px;
+        border:2px solid yellowgreen;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        }
+        .radio-item input:checked+.radio{
+        border-color: aqua;
+    }
+    .radio-item input:checked~span{
+        color: bisque
+    }
+        .radio-item input:checked+.radio::after{
+            content: "";
+        display: block;
+        background: yellow;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin-left: 8px;
+        margin-top: 8px;
+        }
+        .radio-item input[type="radio"]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        请选择性别：
+        <label class="radio-item">
+            <input name="gender" type="radio">
+            <span class="radio"></span>
+            <span>男</span>
+        </label>
+        <label  class="radio-item">
+                <input name="gender" type="radio">
+                <span class="radio"></span>
+                <span>女</span>
+            </label>
+    </p>
+</body>
+</html>

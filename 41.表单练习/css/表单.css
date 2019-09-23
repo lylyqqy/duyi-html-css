@@ -1,0 +1,192 @@
+
+body{
+    line-height: 1.5;
+}.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form a{
+    color:#00a1d6;
+}
+.form{
+    width:980px;
+    margin: 1em auto;
+}
+.form h2{
+    text-align: center;
+    font-size: 38px;
+    border-bottom: 1px solid #dddddd;
+    height: 30px;
+    margin-bottom: 60px;
+}
+.form h2 span{
+    background: #fff;
+    /* margin: 0 20px; */
+    /* 设置Margin不会影响横线的显示，但padding可以 */
+    padding: 0 20px;
+}
+/* 表单区 */
+.form-area{
+    width:423px;
+    margin:0 auto;
+}
+.form-area .form-item{
+    margin:50px 0;
+    position: relative;
+}
+.form-area .select .select-item,.form-area .select .input{
+    float: left;
+    height: 40px;
+}
+.form-area .select .select-item{
+    width: 140px;
+    border:1px solid #dcdfe6;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    border-right: 0;
+    position: relative;
+}
+.form-area .select .select-item ul{
+    max-height: 256px;
+    overflow-y: auto;
+    background: #fff;
+    position: absolute;
+    z-index:1;
+    left:0;
+    top:50px;
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid #dcdfe6;
+    border-radius:4px;
+    color:#606266;
+    padding: 10px 0;
+    display: none;
+}
+.form-area .select .select-item ul li{
+    height: 34px;
+    padding: 20px;
+    cursor: pointer;
+    line-height: 34px;
+}
+.form-area .select .select-item ul li.active{
+    color:#00a1d6;
+    font-weight: bold;
+}
+.form-area .select .select-item ul li:hover{
+    background: #f5f7fa;
+}
+.form-area .select .input input{
+    border-radius: 0 4px 4px 0;
+}
+
+.form-area .select .input{
+    width: 283px;
+}
+.form-area .select .select-item .title{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    color: #909399;
+    cursor: pointer;
+}
+.form-area .form-item .btn-sncode{
+    width: 130px;
+    height: 36px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.form-area .form-item .error{
+    position: absolute;
+    width:240px;
+    right: -250px;
+    top:7px;
+    color:#f45d90;
+    font-size:12px;
+    display: none;
+
+}
+.form-area .form-item.haserror .error{
+    display: block;
+}
+.form-area .form-item.haserror input{
+    border-color: red;
+}
+.form-area .readme{
+    margin-top: -40px;
+    font-size: 12px;
+}
+
+.form-area .readme .checkbox{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #00a1b6;
+    border-radius: 2px;
+    margin-left: 2.5px;
+    margin-top: 2.5px;
+}
+.form-area .readme input{
+    display: none;
+}
+.form-area .readme input:checked+.checkbox{
+    border-color: #00a1b6;
+}
+.form-area .readme input:checked+.checkbox::after{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+}
+/* 统一的文本框样式 */
+input[type="text"],input[type="password"]{
+    border:1px solid #dcdfe6;
+    width: 100%;
+    box-sizing:border-box;
+    border-radius:4px;
+    height: 40px;
+    text-indent: 1em;
+    font-size: 14px;
+    color: #606266;
+    font-family: "PingFangSC-Medium";
+}
+
+input[type="text"]:hover,input[type="password"]:hover{
+    border-color: #c0c4cc;
+}
+input[type="text"]::placeholder,input[type="password"]::placeholder{
+    color: #ccc;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+    border-color:#00a1d6;
+}
+/* 统一设置按钮样式 */
+button{
+    height: 40px;
+    background: #00a1b6;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+button:hover{
+    background: #33b4de;
+    cursor: pointer;
+}
+button.fill{
+    width: 100%;
+}
+.txtright{
+    text-align: right;
+}
+button:disabled{
+    background: #f5f5f5;
+    color: rgba(0,0,0,.25);
+    cursor: not-allowed;
+    border:1px solid #d9d9d9;
+    box-sizing: border-box;
+}
